@@ -1,6 +1,8 @@
 import React from 'react';
 
 import { Layout } from 'antd';
+import SideBar from './Components/SideMenu/SideBar';
+import Dashboard from './Components/Dashboard';
 
 const { Sider, Content } = Layout;
 
@@ -9,10 +11,10 @@ function App() {
     <div>
       <Layout>
         <Sider style={{ backgroundColor: 'blue' }} width='100'>
-          <p>h1</p>
+          <SideBar />
         </Sider>
         <Content style={{ backgroundColor: 'red' }}>
-          <p>h2</p>
+          <Dashboard />
         </Content>
       </Layout>
     </div>
